@@ -16,6 +16,10 @@
 - HTML
 - CSS
 
+## Live Demo
+
+[Live Demo Link](https://livedemo.com)
+
 ## Getting Started
 
 Just simply clone or download the project and open index.html file with your browser.
@@ -27,7 +31,6 @@ Just simply clone or download the project and open index.html file with your bro
 - GitHub: [@githubhandle](https://github.com/Laylooo)
 - Twitter: [@twitterhandle](https://twitter.com/home?lang=en)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/laylo-khodjaeva-05a972207/)
-
 
 ## 🤝 Contributing
 
