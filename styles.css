@@ -51,7 +51,7 @@ a {
   color: #6070ff;
 }
 
-.logo:hover {
+.logo:enabled {
   transform: scale(1.1);
 }
 
@@ -70,7 +70,7 @@ a {
   padding: 0;
 }
 
-.menu:hover {
+.menu:enabled {
   transform: scale(1.2);
 }
 
@@ -231,6 +231,7 @@ p {
   padding-right: 70px;
   width: 390px;
   margin: 0;
+  display: flex;
 }
 
 .about-menu {
