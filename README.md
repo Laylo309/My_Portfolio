@@ -8,7 +8,7 @@
 
 - Understanding how to use FIGMA.
 - Flexbox elements.
-- Using images.
+- Using Images.
 - And of course building portfolio project.
 
 ## Built With
