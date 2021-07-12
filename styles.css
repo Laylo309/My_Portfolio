@@ -313,3 +313,36 @@ p {
   color: #fff;
   margin-left: 24px;
 }
+
+.last-page{
+  background-image: url(./Images/Contact-me/contact\ form\ shapes-mobile@2x.png);
+  background-color: #6070ff;
+  background: cover;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  border-top-left-radius: 40px;
+  color: white;
+}
+
+.contact-me{
+  grid-column-start: 2;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+::placeholder{
+  background: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
