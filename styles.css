@@ -314,35 +314,89 @@ p {
   margin-left: 24px;
 }
 
-.last-page{
-  background-image: url(./Images/Contact-me/contact\ form\ shapes-mobile@2x.png);
+.last-page {
+  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png'),
+    url('./Images/Shape.png');
+  background-repeat: no-repeat;
+  background-position-x: 328px, 311px, 115px;
+  background-position-y: 45px, 15px, 675px;
   background-color: #6070ff;
-  background: cover;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 5% 90% 5%;
-  border-top-left-radius: 40px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 24px;
+  padding-top: 103px;
+  padding-bottom: 43px;
+  margin-top: 100px;
+  border-radius: 70px 0 0 0;
 }
 
-.contact-me{
+.contact-me {
   grid-column-start: 2;
   justify-items: center;
   display: flex;
   flex-direction: column;
-
 }
 
-.form{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  font-family: 'Poppins', sans-serif;
-}
-
-::placeholder{
+::placeholder {
   background: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-radius: 10px;
+}
+
+.contact-info {
+  display: flex;
+  text-align: center;
+  color: #ebebff;
+  margin-left: 0;
+  margin-right: 24px;
+  margin-bottom: 60px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #6070ff;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 22px 12px 30px 0;
+  margin-bottom: 45px;
+  margin-left: 8px;
+}
+
+input[type='text'],
+input[type='email'] {
+  display: flex;
+  align-items: center;
+  border: 10px solid #fff;
+  background: #fff;
+  border-radius: 8px;
+  padding-right: 12px;
+  margin-bottom: 20px;
+  width: 330px;
+  height: 35px;
+}
+
+textarea {
+  display: flex;
+  align-items: center;
+  border: 10px solid #fff;
+  background: #fff;
+  border-radius: 8px;
+  padding-right: 12px;
+  width: 330px;
+  height: 100px;
+}
+
+.button:enabled {
+  transform: scale(1.1);
 }
