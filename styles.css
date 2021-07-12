@@ -14,6 +14,8 @@ body {
   position: absolute;
   width: 375px;
   height: 718px;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
 }
 
 ul {
@@ -26,7 +28,6 @@ header {
   padding: 24px;
   margin: 24px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -40,18 +41,16 @@ a {
   height: 20px;
   left: 12px;
   top: 10px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   display: flex;
-  align-items: center;
   text-align: center;
   color: #6070ff;
 }
 
-.logo:enabled {
+.logo .button .menu .btn .btn_1:enabled {
   transform: scale(1.1);
 }
 
@@ -70,17 +69,11 @@ a {
   padding: 0;
 }
 
-.menu:enabled {
-  transform: scale(1.2);
-}
-
 .text {
-  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   display: flex;
-  align-items: center;
   color: #172b4d;
   margin-left: 20px;
 }
@@ -88,7 +81,6 @@ a {
 p {
   line-height: 24px;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   margin: 12px 0;
@@ -96,7 +88,6 @@ p {
 }
 
 .social-media-text {
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
@@ -106,7 +97,6 @@ p {
 }
 
 .social-media-icons {
-  align-items: center;
   justify-content: space-between;
   display: flex;
   padding: 0;
@@ -141,13 +131,11 @@ p {
 
 .canopy {
   color: #344563 !important;
-  font-family: 'Poppins', sans-serif;
   flex-direction: row;
 }
 
 .canopy1 {
   color: #7a869a !important;
-  font-family: 'Poppins', sans-serif;
   flex-direction: row;
 }
 
@@ -161,9 +149,7 @@ p {
 
 .btn {
   display: flex;
-  align-items: center;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -179,9 +165,7 @@ p {
 
 .btn_1 {
   display: flex;
-  align-items: center;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -195,16 +179,7 @@ p {
   margin: 24px;
 }
 
-.btn:enabled {
-  transform: scale(1.1);
-}
-
-.btn_1:enabled {
-  transform: scale(1.1);
-}
-
 .tech-info > li {
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -213,14 +188,12 @@ p {
   border-radius: 8px;
   background: #ebebff;
   margin: 0 4px;
-  align-items: center;
   padding: 4px 12px;
   justify-content: space-between;
 }
 
 .tonic {
   background-color: #fff;
-  font-family: 'Poppins', sans-serif;
   border-radius: 16px;
   padding: 5px;
   margin-bottom: 100px;
@@ -244,21 +217,17 @@ p {
 }
 
 .about-title {
-  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   display: flex;
-  align-items: center;
   color: #172b4d;
   margin-left: 20px;
 }
 
 .about-info {
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   display: flex;
-  align-items: center;
   color: #344563;
   margin-left: 24px;
 }
@@ -274,7 +243,6 @@ p {
 .techs > p {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -289,7 +257,6 @@ p {
 }
 
 .work-info > li {
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -304,15 +271,12 @@ p {
 
 .languages {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-direction: row;
 }
 
 .lang-list {
   display: flex;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 15px;
   border: 10px solid #fff;
@@ -331,7 +295,6 @@ p {
 
 .tech-titles {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 12px 24px 12px 0;
   border-bottom: 1px solid #dfe1e6;
@@ -343,16 +306,10 @@ p {
 }
 
 .contact-title {
-  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   display: flex;
-  align-items: center;
   color: #fff;
   margin-left: 24px;
-}
-
-.button:enabled {
-  transform: scale(1.1);
 }
