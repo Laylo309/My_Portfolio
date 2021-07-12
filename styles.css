@@ -311,8 +311,7 @@ p {
 }
 
 .last-page {
-  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png'),
-    url('./Images/Shape.png');
+  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png'), url('./Images/Shape.png');
   background-repeat: no-repeat;
   background-position-x: 328px, 311px, 115px;
   background-position-y: 45px, 15px, 675px;
