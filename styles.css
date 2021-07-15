@@ -58,7 +58,6 @@ a {
 .main-page {
   background-image: url('./Images/background.png');
   background-position: center;
-
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -82,7 +81,6 @@ p {
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
-  /* margin: 12px 0; */
   margin-left: 20px;
 }
 
@@ -91,7 +89,6 @@ p {
   font-weight: normal;
   line-height: 24px;
   color: #7f8cff;
-  /* margin: 12px 0; */
   margin-left: 20px;
 }
 
@@ -310,8 +307,7 @@ p {
 }
 
 .last-page {
-  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png'),
-    url('./Images/Shape.png');
+  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png'), url('./Images/Shape.png');
   background-repeat: no-repeat;
   background-position-x: 328px, 311px, 115px;
   background-position-y: 45px, 15px, 675px;
@@ -634,6 +630,18 @@ textarea {
     cursor: pointer;
   }
 
+  .tonic {
+    display: flex;
+    align-items: center;
+    text-align:start;
+  }
+
+  .tonic1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
   .tonic:hover {
     border: #6070ff solid;
     border-width: thin;
@@ -642,18 +650,6 @@ textarea {
   .tonic1:hover {
     border: #6070ff solid;
     border-width: thin;
-  }
-
-  .tonic {
-    display: flex;
-    align-items: center;
-    text-align: flex-start;
-  }
-
-  .tonic1 {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
   }
 
   .description {
@@ -805,7 +801,6 @@ textarea {
     flex-direction: column;
     height: 916px;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     padding-bottom: 43px;
