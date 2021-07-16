@@ -316,8 +316,7 @@ p {
 }
 
 .last-page {
-  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png'),
-    url('./Images/Shape.png');
+  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png'), url('./Images/Shape.png');
   background-repeat: no-repeat;
   background-position-x: 328px, 311px, 115px;
   background-position-y: 45px, 15px, 675px;
@@ -333,7 +332,6 @@ p {
 }
 
 .contact-me {
-  /* grid-column-start: 2; */
   justify-items: center;
   display: flex;
   flex-direction: column;
@@ -424,6 +422,7 @@ textarea {
   }
 
   /* Header */
+
   header {
     display: flex;
     justify-content: space-between;
@@ -547,7 +546,6 @@ textarea {
     padding: 80px 24px;
     background: #f7f7f9;
     z-index: 1;
-    /* display: grid; */
     margin-bottom: 20px;
   }
 
