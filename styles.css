@@ -10,6 +10,11 @@ h2 {
   margin-left: 20px;
 }
 
+h3 {
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
 body {
   position: absolute;
   width: 100%;
@@ -339,6 +344,7 @@ p {
 
 ::placeholder {
   font-family: 'Poppins', sans-serif;
+  color: #332F2E;
 }
 
 .contact-info {
@@ -826,6 +832,7 @@ textarea {
 
   ::placeholder {
     font-family: 'Poppins', sans-serif;
+    color: #332F2E;
   }
 
   .contact-info {
