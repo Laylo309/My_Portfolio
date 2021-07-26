@@ -1,20 +1,18 @@
-let hamBttn = document.querySelector('.menu');
-let mainpage = document.querySelector('.main-page');
-let header = document.querySelector('header');
-let worksSection = document.querySelector('.works-section');
+const hamBttn = document.querySelector('.menu');
+const mainpage = document.querySelector('.main-page');
+const header = document.querySelector('header');
+const worksSection = document.querySelector('.works-section');
 
-var blurElements = [mainpage, header, worksSection];
+const blurElements = [mainpage, header, worksSection];
 
-hamBttn.addEventListener('click', function(){
-  let div = document.createElement('div');
+hamBttn.addEventListener('click', () => {
+  const div = document.createElement('div');
   div.id = 'overlay';
   document.body.appendChild(div);
-  div.style.display = "block";
+  div.style.display = 'block';
 
   // Modify main-page css
-  for(let i = 0; i < blurElements.length; i++){
+  for (let i = 0; i < blurElements.length; i += 1) {
     blurElements[i].classList.add('blur-content');
   }
-})
-
-
+});
