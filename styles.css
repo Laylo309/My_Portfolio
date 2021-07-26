@@ -21,6 +21,24 @@
   cursor: pointer;
 }
 
+.cancelBttn {
+  float: right;
+  padding: 25px 30px;
+}
+
+.mobile-menu-ul {
+  margin-top: 50px;
+  float: left;
+}
+
+.mobile-menu-li {
+  padding: 7px;
+  margin-left: 30px;
+  font-size: 30px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
 h2 {
   margin-left: 20px;
 }
