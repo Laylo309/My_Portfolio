@@ -3,7 +3,7 @@ const hamBttn = document.querySelector('.menu');
 const mainpage = document.querySelector('.main-page');
 const header = document.querySelector('header');
 const worksSection = document.querySelector('.works-section');
-const aboutMe = document.querySelector('.about-menu');
+const aboutMe = document.querySelector('.about');
 const lastPage = document.querySelector('.last-page');
 const blurElements = [mainpage, header, worksSection, aboutMe, lastPage];
 
