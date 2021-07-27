@@ -6,6 +6,39 @@
   padding: 0;
 }
 
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 65, 255, 1);
+  opacity: 0.7;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.cancelBttn {
+  float: right;
+  padding: 25px 30px;
+}
+
+.mobile-menu-ul {
+  margin-top: 50px;
+  float: left;
+}
+
+.mobile-menu-li {
+  padding: 7px;
+  margin-left: 30px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+}
+
 h2 {
   margin-left: 20px;
 }
@@ -30,11 +63,14 @@ ul {
 
 /* Header */
 header {
-  padding: 20px;
+  padding: 15px;
+  padding-bottom: 2px;
   display: flex;
   justify-content: space-between;
   width: 100%;
   background: #fff;
+  position: fixed;
+  z-index: 1;
 }
 
 a {
@@ -43,17 +79,13 @@ a {
 
 .logo {
   position: static;
-  width: 76px;
-  height: 20px;
-  left: 12px;
-  top: 10px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 20px;
   display: flex;
   text-align: center;
   color: #6070ff;
+  margin-top: 7px;
 }
 
 /* First-page */
@@ -64,6 +96,13 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 24px;
+}
+
+.blur-content {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
 }
 
 .menu {
@@ -321,7 +360,10 @@ p {
 }
 
 .last-page {
-  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png'), url('./Images/Shape.png');
+  background-image:
+    url('./Images/Ellipse.png'),
+    url('./Images/Rectangle.png'),
+    url('./Images/Shape.png');
   background-repeat: no-repeat;
   background-position-x: 328px, 311px, 115px;
   background-position-y: 45px, 15px, 675px;
