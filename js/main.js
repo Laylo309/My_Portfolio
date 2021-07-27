@@ -1,17 +1,46 @@
+// Mobile Menu
 const div = document.createElement('div');
 const hamBttn = document.querySelector('.menu');
-const mainpage = document.querySelector('.main-page');
 const header = document.querySelector('header');
+const mainpage = document.querySelector('.main-page');
 const worksSection = document.querySelector('.works-section');
 const aboutMe = document.querySelector('.about');
 const lastPage = document.querySelector('.last-page');
 const blurElements = [mainpage, header, worksSection, aboutMe, lastPage];
+
+// Projects popup
+const popupDivBG = document.createElement('div');
+const popupDiv = document.createElement('div');
+const projectBttns = document.querySelectorAll('.popup');
+
+function addEventListenerList() {
+  for (let i = 0; i < projectBttns.length; i += 1) {
+    projectBttns[i].addEventListener('click', () => {
+      console.log("test");
+      popupDiv.id = 'overlay-popup';
+      popupDivBG.id = 'overlay-popup-bg';
+      document.body.appendChild(popupDiv);
+      document.body.appendChild(popupDivBG);
+      popupDivBG.style.display = 'block !important';
+      popupDiv.style.display = 'block !important';
+      BlurSections();
+    });
+  }
+}
 
 function UnBlurSections() {
   for (let i = 0; i < blurElements.length; i += 1) {
     blurElements[i].classList.remove('blur-content');
   }
 }
+
+function BlurSections(){
+  // Add css class to behind sections
+  for (let i = 0; i < blurElements.length; i += 1) {
+    blurElements[i].classList.add('blur-content');
+  }
+}
+
 hamBttn.addEventListener('click', () => {
   // Create div for mobile menu
   div.id = 'overlay';
@@ -23,10 +52,7 @@ hamBttn.addEventListener('click', () => {
     + '</ul>';
   document.body.appendChild(div);
   div.style.display = 'block';
-  // Add css class to behind sections
-  for (let i = 0; i < blurElements.length; i += 1) {
-    blurElements[i].classList.add('blur-content');
-  }
+  BlurSections();
   // Add listener for closing menu
   const mobileMenu = document.querySelector('.cancelBttn');
   mobileMenu.addEventListener('click', () => {
@@ -43,3 +69,5 @@ hamBttn.addEventListener('click', () => {
     });
   }
 });
+
+addEventListenerList();
