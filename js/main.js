@@ -15,7 +15,7 @@ function UnBlurSections() {
 hamBttn.addEventListener('click', () => {
   // Create div for mobile menu
   div.id = 'overlay';
-  div.innerHTML = '<img src="/Images/cancel.png" class="cancelBttn"></img>'
+  div.innerHTML = '<img src="./Images/cancel.png" class="cancelBttn"></img>'
     + '<ul class="mobile-menu-ul">'
     + '<li class="mobile-menu-li" id="1">Porfolio</li>'
     + '<li class="mobile-menu-li" id="2">About</li>'
