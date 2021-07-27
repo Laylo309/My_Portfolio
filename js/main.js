@@ -3,7 +3,9 @@ const hamBttn = document.querySelector('.menu');
 const mainpage = document.querySelector('.main-page');
 const header = document.querySelector('header');
 const worksSection = document.querySelector('.works-section');
-const blurElements = [mainpage, header, worksSection];
+const aboutMe = document.querySelector('.about-menu');
+const lastPage = document.querySelector('.last-page');
+const blurElements = [mainpage, header, worksSection, aboutMe, lastPage];
 
 function UnBlurSections() {
   for (let i = 0; i < blurElements.length; i += 1) {
