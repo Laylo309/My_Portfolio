@@ -127,7 +127,6 @@ function addEventListenerList() {
       popupDiv.id = 'overlay-popup';
       popupDivBG.id = 'overlay-popup-bg';
       projectDiv.id = 'overlay-project';
-      // document.querySelector('body').style.overflow = 'hidden';
       document.body.appendChild(popupDiv);
       document.body.appendChild(popupDivBG);
       BlurSections();
