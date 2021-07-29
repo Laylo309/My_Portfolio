@@ -172,3 +172,38 @@ const addEventListenerList = () => {
 };
 
 addEventListenerList();
+
+// Form Validation
+const form = document.getElementById('form');
+const emailForm = 'Please enter a valid email address';
+
+const hasValue = (input) => {
+  if (input === '') {
+    return false;
+  }
+  return true;
+};
+
+const showMessage = (input, message) => {
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+};
+
+const validateEmail = (input, emailForm) => {
+  const value = input.value.trim();
+  if (!hasValue(input.value)) {
+    return false;
+  }
+  const lowerCaseValidator = /[A-Z]/g;
+  if (value.match(lowerCaseValidator)) {
+    input.value = value.toLowerCase();
+    return showMessage(input, emailForm);
+  }
+  return true;
+};
+
+form.addEventListener('submit', (event) => {
+  const emailSubmit = form.elements.user_email;
+  const validEmail = validateEmail(emailSubmit, emailForm);
+  event.preventDefault();
+});
