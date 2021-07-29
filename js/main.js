@@ -15,12 +15,12 @@ function UnBlurSections() {
   }
 }
 
-function BlurSections() {
+const BlurSections = () => {
   // Add css class to behind sections
   for (let i = 0; i < blurElements.length; i += 1) {
     blurElements[i].classList.add('blur-content');
   }
-}
+};
 
 hamBttn.addEventListener('click', () => {
   // Create div for mobile menu
@@ -91,7 +91,7 @@ const myProjects = [{
 },
 ];
 
-function createWorksSection() {
+const createWorksSection = () => {
   if (myProjects.length !== 0) {
     const myWorksSection = document.querySelector('.myWorksSection');
     for (let i = 0; i < myProjects.length; i += 1) {
@@ -117,11 +117,11 @@ function createWorksSection() {
         + '</li>';
     }
   }
-}
+};
 
 createWorksSection();
 
-function addEventListenerList() {
+const addEventListenerList = () => {
   for (let i = 0; i < projectBttns.length; i += 1) {
     projectBttns[i].addEventListener('click', () => {
       popupDiv.id = 'overlay-popup';
@@ -169,6 +169,6 @@ function addEventListenerList() {
       });
     });
   }
-}
+};
 
 addEventListenerList();
