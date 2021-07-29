@@ -9,11 +9,11 @@ const lastPage = document.querySelector('.last-page');
 const blurElements = [mainpage, header, worksSection, aboutMe, lastPage];
 
 // Mobile Menu
-function UnBlurSections() {
+const UnBlurSections = () => {
   for (let i = 0; i < blurElements.length; i += 1) {
     blurElements[i].classList.remove('blur-content');
   }
-}
+};
 
 const BlurSections = () => {
   // Add css class to behind sections
