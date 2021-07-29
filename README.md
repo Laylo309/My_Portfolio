@@ -27,6 +27,7 @@ Just simply clone or download the project and open index.html file with your bro
 ## Authors
 
 👤 **Laylo**
+👤 **Mateo Viliagomez**
 
 - GitHub: [@githubhandle](https://github.com/Laylooo)
 - Twitter: [@twitterhandle](https://twitter.com/home?lang=en)
