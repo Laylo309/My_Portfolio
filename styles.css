@@ -37,20 +37,45 @@
 }
 
 #overlay-popup {
-  position: absolute;
-  background: black;
+  position: fixed;
+  background: #fff;
   border-radius: 20px;
   z-index: 2;
-  left: 0; 
-  right: 0; 
+  left: 0;
+  right: 0;
   top: 5vh;
   bottom: 5vh;
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85vw;
+  overflow-y: scroll;
 }
 
-.cancelBttn {
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+.btns {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+
+  /* justify-content: space-between; */
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  padding: 9px;
+
+  /* margin: 10px 83px 10px 21px; */
+  margin: 20px 10px 11px 20px;
+}
+
+.cancelBttn,
+#cancel-button {
   float: right;
   padding: 25px 30px;
 }
@@ -209,9 +234,23 @@ p {
   flex-direction: row;
 }
 
+.canopys {
+  color: #344563 !important;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
 .canopy1 {
   color: #7a869a !important;
   flex-direction: row;
+}
+
+.canopys1 {
+  color: #7a869a !important;
+  flex-direction: row;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px;
 }
 
 .span {
@@ -322,6 +361,12 @@ p {
   font-size: 20px;
   line-height: 24px;
   color: #000;
+}
+
+.work {
+  display: flex;
+  padding: 0;
+  margin: 20px 0 0 10px;
 }
 
 .work-info {
@@ -490,6 +535,10 @@ textarea {
     height: 100%;
   }
 
+  #overlay-popup {
+    width: 70%;
+  }
+
   h2 {
     margin-left: 20px;
   }
@@ -637,16 +686,23 @@ textarea {
     grid-column-start: 3;
   }
 
-  .canopy {
+  .canopy .canopys {
     color: #344563 !important;
     flex-direction: row;
   }
 
-  .canopy1 {
+  .canopy1 .canopys1 {
     color: #6b778c !important;
     flex-direction: row;
     font-weight: 400;
     font-size: 18px;
+    padding: 0;
+  }
+
+  .image {
+    height: 90%;
+    width: 90%;
+    margin: 3vw;
   }
 
   .span {
@@ -738,6 +794,7 @@ textarea {
 
   .description {
     padding-left: 100px;
+    margin-right: 30vw;
   }
 
   .about {
@@ -786,7 +843,7 @@ textarea {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 
   .techs > p {
