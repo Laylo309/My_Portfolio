@@ -71,3 +71,12 @@ hamBttn.addEventListener('click', () => {
 });
 
 addEventListenerList();
+
+form.addEventListener('submit', (event) => {
+  const emailSubmit = form.elements.user_email;
+  const validEmail = validateEmail(emailSubmit, emailForm);
+  if (validEmail) {
+    errorMessage();
+  }
+  event.preventDefault();
+});
