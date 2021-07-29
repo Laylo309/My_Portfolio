@@ -203,7 +203,7 @@ const validateEmail = (input, emailForm) => {
 };
 
 const errorMessage = () => {
-  const allmessages = document.querySelectorAll('#validation');
+  const allmessages = document.querySelectorAll('.validation');
   if (allmessages.length > 0) {
     for (let i = 0; i < allmessages.length; i += 1) { allmessages[i].innerHTML = ''; }
   }
