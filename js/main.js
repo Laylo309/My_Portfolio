@@ -202,8 +202,9 @@ const validateEmail = (input, emailForm) => {
   return true;
 };
 
-form.addEventListener('submit', (event) => {
-  const emailSubmit = form.elements.user_email;
-  const validEmail = validateEmail(emailSubmit, emailForm);
-  event.preventDefault();
-});
+const errorMessage = () => {
+  const allmessages = document.querySelectorAll('#validation');
+  if (allmessages.length > 0) {
+    for (let i = 0; i < allmessages.length; i += 1) { allmessages[i].innerHTML = ''; }
+  }
+};
