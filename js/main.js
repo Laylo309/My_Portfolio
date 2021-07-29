@@ -147,17 +147,17 @@ function addEventListenerList() {
         + ' <p class="despription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the '
         + 'industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the'
         + 'relea'
-        +'<div class="technologies">'
+        + '<div class="technologies">'
         + '  <ul class="tech-info">'
         + '    <li>html</li>'
         + '  <li>css</li>'
         + '  <li>javaScript</li>'
         + ' </ul>'
-        +'<div id="container">'
+        + '<div id="container">'
         + '<button class="btns popup" type="button">See Live</button>'
         + '<button class="btns popup" type="button">See Source</button>'
-        +'</div>'
-        +'</div>'
+        + '</div>'
+        + '</div>'
         + '</div>';
       popupDiv.appendChild(projectDiv);
       projectDiv.style.display = 'block';
