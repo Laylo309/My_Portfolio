@@ -25,13 +25,12 @@ const BlurSections = () => {
 hamBttn.addEventListener('click', () => {
   // Create div for mobile menu
   div.id = 'overlay';
-  div.innerHTML =
-    '<img src="./Images/cancel.png" class="cancelBttn"></img>' +
-    '<ul class="mobile-menu-ul">' +
-    '<li class="mobile-menu-li" id="1">Porfolio</li>' +
-    '<li class="mobile-menu-li" id="2">About</li>' +
-    '<li class="mobile-menu-li" id="3">Contact</li>' +
-    '</ul>';
+  div.innerHTML = `    <img src="./Images/cancel.png" class="cancelBttn"></img>  
+    <ul class="mobile-menu-ul">  
+    <li class="mobile-menu-li" id="1">Porfolio</li>  
+    <li class="mobile-menu-li" id="2">About</li>  
+    <li class="mobile-menu-li" id="3">Contact</li>  
+    </ul>`;
   document.body.appendChild(div);
   div.style.display = 'block';
   document.querySelector('body').style.overflow = 'hidden';
@@ -63,7 +62,7 @@ const data = {
     {
       name: 'Tonic',
       imgUrl: './Images/pages/SnapshootPortfolio.png',
-      techs: 'html css ruby',
+      techs: ['html', 'css', 'ruby'],
       description:
         'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       button: 'See Project',
@@ -98,26 +97,28 @@ const data = {
 const createWorksSection = () => {
   if (data.length !== 0) {
     const myWorksSection = document.querySelector('.myWorksSection');
-    data.projects.map(
-      (project) =>
-        (myWorksSection.innerHTML +=
-          '<li class="tonic">' +
-          `<img src="${project.imgUrl}" alt="project background image" class="image-responsive">` +
-          '<div>' +
-          `<h3>${project.name}</h3>` +
-          '<ul class="work-info">' +
-          '<li class="canopy">CANOPY</li>' +
-          '<li><span class="span"></span></li>' +
-          '<li class="canopy1">Back End Dev</li>' +
-          '<li><span class="span"></span></li>' +
-          '<li class="canopy1">2015</li>' +
-          '</ul>' +
-          `<p class="despription">${project.description}</p>` +
-          `<ul class="tech-info">${project.techs}</ul>` +
-          `<button class="btn popup" type="button">${project.button}</button>` +
-          '</div>' +
-          '</li>')
-    );
+    for (let i = 0; i < data.projects.length; i += 1) {
+      let technologies = '';
+      for (let j = 0; j < data.projects[i].techs.length; j += 1) {
+        technologies += `<li>${data.projects[i].techs[j]}</li>`;
+      }
+      myWorksSection.innerHTML += `     <li class="tonic">  
+       <img src="${data.projects[i].imgUrl}" alt="project background image" class="image-responsive">
+       <div>  
+       <h3>${data.projects[i].name}</h3>
+       <ul class="work-info">  
+       <li class="canopy">CANOPY</li>  
+       <li><span class="span"></span></li>  
+       <li class="canopy1">Back End Dev</li>  
+       <li><span class="span"></span></li>  
+       <li class="canopy1">2015</li>  
+       </ul>  
+       <p class="despription">${data.projects[i].description}</p>
+       <ul class="tech-info">${technologies}</ul>
+       <button class="btn popup" type="button">${data.projects[i].button}</button>
+       </div>  
+       </li>`;
+    }
   }
 };
 
@@ -134,33 +135,32 @@ const addEventListenerList = () => {
       BlurSections();
       popupDivBG.style.display = 'block !important';
       popupDiv.style.display = 'block !important';
-      projectDiv.innerHTML =
-        ' <div>' +
-        '<img src="./Images/Icon.png" id="cancel-button"></img>' +
-        ' <h3>Tonic</h3>' +
-        ' <ul class="work">' +
-        '   <li class="canopys">CANOPY</li>' +
-        '   <li><span class="span"></span></li>' +
-        '  <li class="canopys1">Back End Dev</li>' +
-        '   <li><span class="span"></span></li>' +
-        '  <li class="canopys">2015</li>' +
-        '  </ul>' +
-        '<img src="./Images/pages/SnapshootPortfolio.png" class="image"></img>' +
-        ' <p class="despription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ' +
-        'industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the' +
-        'relea' +
-        '<div class="technologies">' +
-        '  <ul class="tech-info">' +
-        '    <li>html</li>' +
-        '  <li>css</li>' +
-        '  <li>javaScript</li>' +
-        ' </ul>' +
-        '<div id="container">' +
-        '<button class="btns popup" type="button">See Live</button>' +
-        '<button class="btns popup" type="button">See Source</button>' +
-        '</div>' +
-        '</div>' +
-        '</div>';
+      projectDiv.innerHTML = ` <div>  
+        <img src="./Images/Icon.png" id="cancel-button"></img>  
+         <h3>Tonic</h3>  
+         <ul class="work">  
+           <li class="canopys">CANOPY</li>  
+           <li><span class="span"></span></li>  
+          <li class="canopys1">Back End Dev</li>  
+           <li><span class="span"></span></li>  
+          <li class="canopys">2015</li>  
+          </ul>  
+        <img src="./Images/pages/SnapshootPortfolio.png" class="image"></img>  
+         <p class="despription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the   
+        industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with he  
+        relea  
+        <div class="technologies">  
+          <ul class="tech-info">  
+            <li>html</li>  
+          <li>css</li>  
+          <li>javaScript</li>  
+         </ul>  
+        <div id="container">  
+        <button class=" btns popup" type="button">See Live</button>  
+        <button class="btns popup" type="button">See Source</button>  
+        </div>
+        </div>
+        </div>`;
       popupDiv.appendChild(projectDiv);
       projectDiv.style.display = 'block';
 
