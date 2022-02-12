@@ -28,11 +28,9 @@ Just simply clone or download the project and open index.html file with your bro
 
 👤 **Laylo**
 
-👤 **Mateo Viliagomez**
-
-- GitHub: [@githubhandle](https://github.com/Laylooo)
-- Twitter: [@twitterhandle](https://twitter.com/home?lang=en)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/laylo-khodjaeva-05a972207/)
+- GitHub: [Laylo309](https://github.com/Laylo309)
+- Twitter: [laylo_khodjaeva](https://twitter.com/laylo_khodjaeva)
+- LinkedIn: [laylo_khodjaeva](https://www.linkedin.com/in/laylo-khodjaeva/)
 
 ## 🤝 Contributing
 
