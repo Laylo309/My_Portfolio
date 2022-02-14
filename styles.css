@@ -117,7 +117,7 @@ header {
   background: #fff;
   position: fixed;
   z-index: 1;
-  box-shadow: 2px 2px 4px #aaaaaa;
+  box-shadow: 2px 2px 4px #aaa;
 }
 
 a {
@@ -386,6 +386,7 @@ p {
   display: flex;
   align-items: center;
 }
+
 .image-responsive {
   position: relative;
   padding: 16px;
@@ -636,7 +637,7 @@ textarea {
   .about-title,
   .about-info {
     margin-left: 1px;
-    margin-right: 25px
+    margin-right: 25px;
   }
 
   .techs {
@@ -747,6 +748,7 @@ textarea {
     width: 447px;
     height: 170px;
   }
+
   .btn:hover {
     background-color: #0010c2;
     color: #fff;
