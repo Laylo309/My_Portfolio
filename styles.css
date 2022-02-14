@@ -105,33 +105,32 @@ body {
 ul {
   display: inline;
   list-style-type: none;
+  padding-left: 0;
 }
 
 /* Header */
 header {
-  padding: 15px;
-  padding-bottom: 2px;
+  padding: 15px 15px 2px 15px;
   display: flex;
   justify-content: space-between;
   width: 100%;
   background: #fff;
   position: fixed;
   z-index: 1;
+  box-shadow: 2px 2px 4px #aaaaaa;
 }
 
 a {
   text-decoration: none;
+  color: #6070ff;
 }
 
 .logo {
-  position: static;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  display: flex;
-  text-align: center;
   color: #6070ff;
-  margin-top: 7px;
+  margin-top: 0.2rem;
+  margin-left: 1.5rem;
 }
 
 /* First-page */
@@ -378,19 +377,15 @@ p {
 
 .lang-list > img {
   padding: 9px 0 9.72px 12px;
+  float: left;
+  height: 100px;
 }
 
 .lang-list > p {
   margin-left: 16px;
-}
-
-.tech-titles {
   display: flex;
-  justify-content: space-between;
-  padding: 12px 24px 12px 0;
-  border-bottom: 1px solid #dfe1e6;
+  align-items: center;
 }
-
 .image-responsive {
   position: relative;
   padding: 16px;
@@ -406,8 +401,7 @@ p {
 }
 
 .last-page {
-  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png'),
-    url('./Images/Shape.png');
+  background-image: url('./Images/Ellipse.png'), url('./Images/Rectangle.png');
   background-repeat: no-repeat;
   background-position-x: 328px, 311px, 115px;
   background-position-y: 45px, 15px, 675px;
@@ -497,12 +491,6 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  body {
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    height: 100%;
-  }
-
   #overlay-popup {
     width: 70%;
   }
@@ -567,12 +555,6 @@ textarea {
 
   /* Works section */
 
-  .tech-info {
-    display: flex;
-    padding: 0;
-    margin: 20px 0 0 10px;
-  }
-
   .tech-icons {
     background-color: #fff;
     grid-column-start: 3;
@@ -616,9 +598,9 @@ textarea {
   }
 
   .tonic:hover {
-     border: #c3c9f8 solid;
-    border-width: thin; 
-    transition: border-width 0.3s ;
+    border: #c3c9f8 solid;
+    border-width: thin;
+    transition: border-width 0.3s;
   }
 
   .description {
@@ -630,9 +612,9 @@ textarea {
     background-color: #fff;
     margin: 1px;
     padding: 1px;
-    padding-top: 100px;
+    padding-top: 150px;
     display: grid;
-    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-columns: 10% 38% 40% 10%;
     margin-top: -50px;
     border-top-right-radius: 50px;
   }
@@ -651,14 +633,10 @@ textarea {
     align-items: start;
   }
 
-  .about-title {
-    margin-left: 1px;
-  }
-
+  .about-title,
   .about-info {
-    font-size: 16px;
-    color: #344563;
     margin-left: 1px;
+    margin-right: 25px
   }
 
   .techs {
@@ -675,11 +653,7 @@ textarea {
     color: #000;
   }
 
-  .work-info {
-    display: flex;
-    padding: 0;
-    margin: 20px 0 0 10px;
-  }
+  /* About me */
 
   .social-media-icons1 {
     margin-left: 0;
@@ -694,7 +668,7 @@ textarea {
   }
 
   .btn {
-    margin: 28px 0 30px 0;
+    margin: 30px 0;
   }
 
   .lang {
@@ -703,7 +677,7 @@ textarea {
 
   .list {
     display: flex;
-    justify-content: center;
+    padding-left: 0;
   }
 
   .languages {
@@ -712,21 +686,11 @@ textarea {
   }
 
   .lang-list {
-    display: flex;
-    font-style: normal;
-    font-size: 15px;
-    border: 10px solid #fff;
-    background: #f7f7f9;
-    border-radius: 8px;
-    padding-right: 12px;
-  }
-
-  .lang-list > img {
-    padding: 9px 0 9.72px 12px;
+    background: transparent;
   }
 
   .lang-list > p {
-    margin-left: 16px;
+    display: none;
   }
 
   .image-responsive {
@@ -737,7 +701,6 @@ textarea {
 
   .last-page {
     background-image: url('./Images/desktop/contact-form.png');
-    display: flex;
     height: 916px;
     background-position: center;
     background-size: cover;
@@ -747,6 +710,7 @@ textarea {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
   }
 
   .contact-me {
@@ -762,14 +726,6 @@ textarea {
     color: #332f2e;
   }
 
-  .contact-info {
-    text-align: center;
-    color: #ebebff;
-    margin-left: 0;
-    margin-right: 24px;
-    margin-bottom: 60px;
-  }
-
   form {
     display: flex;
     flex-direction: column;
@@ -780,24 +736,14 @@ textarea {
 
   input[type='text'],
   input[type='email'] {
-    display: flex;
-    align-items: center;
-    border: 10px solid #fff;
-    background: #fff;
     border-radius: 8px;
     padding-right: 12px;
     margin-bottom: 20px;
-    width: 447px;
-    height: 30px;
+    width: 450px;
+    height: 40px;
   }
 
   textarea {
-    display: flex;
-    align-items: center;
-    border: 10px solid #fff;
-    background: #fff;
-    border-radius: 8px;
-    padding-right: 12px;
     width: 447px;
     height: 170px;
   }
@@ -808,3 +754,11 @@ textarea {
   }
 }
 
+.hpot {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #212529;
+}

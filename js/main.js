@@ -55,7 +55,7 @@ hamBttn.addEventListener('click', () => {
 // Projects popup
 const popupDivBG = document.createElement('div');
 const popupDiv = document.createElement('div');
-const projectBttns = document.querySelectorAll('.popup');
+const projectBttns = document.querySelectorAll('.btn-popup');
 const projectDiv = document.createElement('div');
 const data = {
   projects: [
@@ -78,7 +78,7 @@ const data = {
     {
       name: 'Tonic',
       imgUrl: './Images/pages/SnapshootPortfolio2.png',
-      techs: ['html', 'css', 'ruby'],
+      techs: ['html', 'css', 'javascript'],
       description:
         'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       button: 'See Project',
@@ -115,7 +115,7 @@ const createWorksSection = () => {
        </ul>  
        <p class="despription">${data.projects[i].description}</p>
        <ul class="tech-info">${technologies}</ul>
-       <button class="btn popup" type="button">${data.projects[i].button}</button>
+       <button class="btn popup btn-popup" type="button">${data.projects[i].button}</button>
        </div>  
        </li>`;
     }
@@ -127,17 +127,24 @@ createWorksSection();
 const addEventListenerList = () => {
   for (let i = 0; i < projectBttns.length; i += 1) {
     projectBttns[i].addEventListener('click', () => {
-      popupDiv.id = 'overlay-popup';
-      popupDivBG.id = 'overlay-popup-bg';
-      projectDiv.id = 'overlay-project';
-      document.body.appendChild(popupDiv);
-      document.body.appendChild(popupDivBG);
-      BlurSections();
-      popupDivBG.style.display = 'block !important';
-      popupDiv.style.display = 'block !important';
-      projectDiv.innerHTML = ` <div>  
+      if (data.length !== 0) {
+        for (let i = 0; i < data.projects.length; i += 1) {
+          // let technologies = '';
+          // for (let j = 0; j < data.projects[k].techs.length; j += 1) {
+          //   technologies += `<li>${data.projects[k].techs[j]}</li>`;
+          // }
+          popupDiv.id = 'overlay-popup';
+          popupDivBG.id = 'overlay-popup-bg';
+          projectDiv.id = 'overlay-project';
+          document.body.appendChild(popupDiv);
+          document.body.appendChild(popupDivBG);
+          BlurSections();
+          popupDivBG.style.display = 'block !important';
+          popupDiv.style.display = 'block !important';
+
+          projectDiv.innerHTML = ` <div>  
         <img src="./Images/Icon.png" id="cancel-button"></img>  
-         <h3>Tonic</h3>  
+         <h3>${data.projects[i].name}</h3>  
          <ul class="work">  
            <li class="canopys">CANOPY</li>  
            <li><span class="span"></span></li>  
@@ -145,7 +152,7 @@ const addEventListenerList = () => {
            <li><span class="span"></span></li>  
           <li class="canopys">2015</li>  
           </ul>  
-        <img src="./Images/pages/SnapshootPortfolio.png" class="image"></img>  
+        <img src="${data.projects[i].imgUrl}" class="image"></img>  
          <p class="despription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the   
         industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with he  
         relea  
@@ -161,15 +168,17 @@ const addEventListenerList = () => {
         </div>
         </div>
         </div>`;
-      popupDiv.appendChild(projectDiv);
-      projectDiv.style.display = 'block';
+          popupDiv.appendChild(projectDiv);
+          projectDiv.style.display = 'block';
 
-      const cancelBttn = document.querySelector('#cancel-button');
-      cancelBttn.addEventListener('click', () => {
-        projectDiv.remove();
-        popupDiv.remove();
-        UnBlurSections();
-      });
+          const cancelBttn = document.querySelector('#cancel-button');
+          cancelBttn.addEventListener('click', () => {
+            projectDiv.remove();
+            popupDiv.remove();
+            UnBlurSections();
+          });
+        }
+      }
     });
   }
 };
