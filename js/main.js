@@ -60,42 +60,46 @@ const projectDiv = document.createElement('div');
 const data = {
   projects: [
     {
+      stack: 'hello',
+      year: '2021',
       name: 'Tonic',
       imgUrl: './Images/pages/SnapshootPortfolio.png',
       techs: ['html', 'css', 'ruby'],
       description:
         'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      button: 'See Project',
       live_link: '',
       source_url: '',
     },
     {
+      stack: '',
+      year: '2021',
       name: 'Multi-post Stories',
       imgUrl: './Images/pages/SnapshootPortfolio1.png',
       techs: ['html', 'css', 'ruby'],
       description:
         'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      button: 'See Project',
       live_link: '',
       source_url: '',
     },
     {
+      stack: '',
+      year: '2021',
       name: 'Tonic',
       imgUrl: './Images/pages/SnapshootPortfolio2.png',
       techs: ['html', 'css', 'javascript'],
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      button: 'See Project',
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.',
       live_link: '',
       source_url: '',
     },
     {
+      stack: '',
+      year: '2021',
       name: 'Multi-post Stories',
       imgUrl: './Images/pages/SnapshootPortfolio3.png',
       techs: ['html', 'css', 'ruby'],
       description:
         'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      button: 'See Project',
       live_link: '',
       source_url: '',
     },
@@ -117,13 +121,13 @@ const createWorksSection = () => {
        <ul class="work-info">  
        <li class="canopy">CANOPY</li>  
        <li><span class="span"></span></li>  
-       <li class="canopy1">Back End Dev</li>  
+       <li class="canopy1">${data.projects[i].stack}</li>  
        <li><span class="span"></span></li>  
-       <li class="canopy1">2015</li>  
+       <li class="canopy1">${data.projects[i].year}</li>  
        </ul>  
-       <p class="despription">${data.projects[i].description}</p>
+       <p class="description">${data.projects[i].description}</p>
        <ul class="tech-info">${technologies}</ul>
-       <button class="btn popup" id="${i}" type="button">${data.projects[i].button}</button>
+       <button class="popup-btn popup" id="${i}" type="button">See project</button>
        </div>  
        </li>`;
     }
@@ -151,16 +155,17 @@ const addEventListenerList = () => {
 
       projectDiv.innerHTML = ` <div>  
         <img src="./Images/Icon.png" id="cancel-button"></img>  
-         <h3>${data.projects[popupId].name}</h3>  
-         <ul class="work">  
+         <h3 class="popup-title">${data.projects[popupId].name}</h3>  
+         <ul class="popup-work">  
            <li class="canopys">CANOPY</li>  
            <li><span class="span"></span></li>  
-          <li class="canopys1">Back End Dev</li>  
+          <li class="canopys1">${data.projects[popupId].stack}</li>  
            <li><span class="span"></span></li>  
-          <li class="canopys">2015</li>  
+          <li class="canopys">${data.projects[popupId].year}</li>  
           </ul>  
         <img src="${data.projects[popupId].imgUrl}" class="image"></img>  
-         <p class="despription">${data.projects[popupId].description}</p>
+        <div class="popup-container">
+         <p class="popup-description">${data.projects[popupId].description}</p>
         <div class="technologies">  
           <ul class="tech-info">  
           ${technologies}
@@ -168,6 +173,7 @@ const addEventListenerList = () => {
         <div id="container">  
         <button class=" btns popup" type="button"><a href="${data.projects[popupId].live_link}">See Live</a></button>  
         <button class="btns popup" type="button"><a href="${data.projects[popupId].source_url}">See Source</a></button>  
+        </div>
         </div>
         </div>
         </div>`;
