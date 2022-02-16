@@ -731,10 +731,6 @@ textarea {
   }
 }
 
-.hpot {
-  display: none;
-}
-
 .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: #212529;
