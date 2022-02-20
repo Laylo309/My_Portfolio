@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(44, 65, 255, 1);
+  background: rgba(0 25 255);
   opacity: 0.7;
   z-index: 2;
   cursor: pointer;
@@ -203,6 +203,7 @@ p {
 
 .tech-info {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 20px 20px;
 }
@@ -270,7 +271,7 @@ p {
   color: #6070ff;
   border-radius: 8px;
   background: #ebebff;
-  margin: 0 4px;
+  margin: 4px 4px;
   padding: 4px 12px;
   justify-content: space-between;
 }
@@ -688,8 +689,8 @@ textarea {
   }
 
   .image-responsive {
-    height: 448px;
-    width: 554px;
+    height: 450px;
+    width: 570px;
   }
 
   .last-page {

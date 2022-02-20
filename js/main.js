@@ -27,13 +27,12 @@ hamBttn.addEventListener('click', () => {
   div.id = 'overlay';
   div.innerHTML = `    <img src="./Images/cancel.png" class="cancelBttn"></img>  
     <ul class="mobile-menu-ul">  
-    <li class="mobile-menu-li" id="1">Porfolio</li>  
-    <li class="mobile-menu-li" id="2">About</li>  
-    <li class="mobile-menu-li" id="3">Contact</li>  
+    <li id="portfolio"><a class="mobile-menu-li" href="#portfolio">Portfolio</a></li>  
+    <li id="2"><a class="mobile-menu-li" href="#about">About</a></li>  
+    <li id="3"><a class="mobile-menu-li" href="#contact">Contact</a></li>  
     </ul>`;
   document.body.appendChild(div);
   div.style.display = 'block';
-  document.querySelector('body').style.overflow = 'hidden';
   BlurSections();
   // Add listener for closing menu
   const mobileMenu = document.querySelector('.cancelBttn');
@@ -60,48 +59,116 @@ const projectDiv = document.createElement('div');
 const data = {
   projects: [
     {
-      stack: 'hello',
+      name: 'OOP-school-library',
+      heading: 'Solo-project',
+      stack: 'Back-end',
       year: '2021',
-      name: 'Tonic',
-      imgUrl: './Images/pages/SnapshootPortfolio.png',
-      techs: ['html', 'css', 'ruby'],
+      imgUrl: './Images/projects/Project_9.png',
+      techs: ['ruby', 'rspec', 'OOP'],
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      live_link: '',
-      source_url: '',
+        'Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. Unit testing runs with Rspec.',
+      live_link: '#',
+      source_url:
+        'https://github.com/Laylo309/OOP-school-library',
     },
     {
-      stack: '',
+      name: 'OOP-school-library',
+      heading: 'Solo-project',
+      stack: 'Back-end',
       year: '2021',
-      name: 'Multi-post Stories',
-      imgUrl: './Images/pages/SnapshootPortfolio1.png',
-      techs: ['html', 'css', 'ruby'],
+      imgUrl: './Images/projects/Project_9.png',
+      techs: ['ruby', 'rspec', 'OOP'],
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      live_link: '',
-      source_url: '',
+        'Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. Unit testing runs with Rspec.',
+      live_link: '#',
+      source_url:
+        'https://github.com/Laylo309/OOP-school-library',
     },
     {
-      stack: '',
+      name: 'Covid-19 data traker',
+      heading: 'Capstone/Solo-project',
+      stack: 'Front-end',
       year: '2021',
-      name: 'Tonic',
-      imgUrl: './Images/pages/SnapshootPortfolio2.png',
+      imgUrl: './Images/projects/Project_8.png',
+      techs: ['javascript', 'react', 'redux'],
+      description:
+        'SPA Mobile web app which is created using React and Redux. This webapp helps to get new information about Covid-19. Snapshot test integrated using Jest library.',
+      live_link: 'https://covid19-tracker-laylo309.netlify.app/#/home',
+      source_url:
+        'https://github.com/aristides1000/space-travelers-hub-react-redux',
+    },
+    {
+      name: 'Space Travelers’Hub',
+      heading: 'Group-project',
+      stack: 'Front-end',
+      year: '2021',
+      imgUrl: './Images/projects/Project_7.png',
+      techs: ['javascript', 'react', 'redux'],
+      description:
+        'This is a React project where a user can observe information about rockets and space travel, the application will allow users to book rockets and join selected space missions. Application was made using React and Redux. Snapshot test integrated using Jest library.',
+      live_link: 'https://space-travellers-laylo309.netlify.app/',
+      source_url:
+        'https://github.com/aristides1000/space-travelers-hub-react-redux',
+    },
+    {
+      name: 'Math Magicians',
+      heading: 'Solo-project',
+      stack: 'Front-end',
+      year: '2021',
+      imgUrl: './Images/projects/Project_6.png',
+      techs: ['css', 'javascript', 'react'],
+      description:
+        'My first Single Page React App. Simple calculator which is created using ReactJs. It performs mathematical operations like addition, subtraction, multiplication, and division. Snapshot test integrated using Jest library.',
+      live_link: 'https://app.netlify.com/sites/math-magicians-laylo309',
+      source_url: 'https://github.com/Laylo309/Math_magicians',
+    },
+    {
+      name: 'Leaderboard',
+      heading: 'Solo-project',
+      stack: 'Front-end',
+      year: '2021',
+      imgUrl: './Images/projects/Project_5.png',
       techs: ['html', 'css', 'javascript'],
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized reads; no accounts or sign-ups required.',
+        'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.',
+      live_link: 'https://leaderboard-laylo309.netlify.app/',
+      source_url: 'https://github.com/Laylo309/Leaderboard',
+    },
+    {
+      name: 'To-do list',
+      heading: 'Solo-project',
+      stack: 'Front-end',
+      year: '2021',
+      imgUrl: './Images/projects/Project_4.png',
+      techs: ['html', 'css', 'javascript'],
+      description:
+        '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
       live_link: '',
       source_url: '',
     },
     {
-      stack: '',
+      name: 'Tourism website',
+      heading: 'Capstone/Solo-project',
+      stack: 'Front-end',
       year: '2021',
-      name: 'Multi-post Stories',
-      imgUrl: './Images/pages/SnapshootPortfolio3.png',
-      techs: ['html', 'css', 'ruby'],
+      imgUrl: './Images/projects/Project_3.png',
+      techs: ['html', 'css', 'javascript'],
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      live_link: '',
-      source_url: '',
+        'Static tourism website where you can get information like price of tours and about cities.',
+      live_link: 'https://tourism-website-laylo309.netlify.app/',
+      source_url: 'https://github.com/Laylo309/first_capstone',
+    },
+    {
+      name: 'Clock',
+      heading: 'Solo-project',
+      stack: 'Front-end',
+      year: '2021',
+      imgUrl: './Images/projects/Project_1.png',
+      techs: ['html', 'css', 'javascript'],
+      description:
+        'My very first project which built with Vanilla JS and Git&Github. This is the Clock that shows current time.',
+      live_link: 'https://clock-laylo309.netlify.app/',
+      source_url: 'https://github.com/Laylo309/Clock',
     },
   ],
 };
@@ -119,7 +186,7 @@ const createWorksSection = () => {
        <div>  
        <h3>${data.projects[i].name}</h3>
        <ul class="work-info">  
-       <li class="canopy">CANOPY</li>  
+       <li class="canopy">${data.projects[i].heading}</li>  
        <li><span class="span"></span></li>  
        <li class="canopy1">${data.projects[i].stack}</li>  
        <li><span class="span"></span></li>  
@@ -157,7 +224,7 @@ const addEventListenerList = () => {
         <img src="./Images/Icon.png" id="cancel-button"></img>  
          <h3 class="popup-title">${data.projects[popupId].name}</h3>  
          <ul class="popup-work">  
-           <li class="canopys">CANOPY</li>  
+           <li class="canopys">${data.projects[popupId].heading}</li>  
            <li><span class="span"></span></li>  
           <li class="canopys1">${data.projects[popupId].stack}</li>  
            <li><span class="span"></span></li>  
