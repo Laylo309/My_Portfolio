@@ -59,17 +59,52 @@ const projectDiv = document.createElement('div');
 const data = {
   projects: [
     {
-      name: 'OOP-school-library',
-      heading: 'Solo-project',
+      name: 'My Budget App',
+      heading: 'Capstone/Group-project',
+      stack: 'Full-stack',
+      year: '2022',
+      imgUrl: './Images/projects/Project_13.png',
+      techs: ['ruby', 'rails', 'react'],
+      description:
+        'The Full-Stack Group  Project which is based on an app to book an appointment to try a fancy car, to resrve a car, and to create your own car. This project built using rails-react-gem and swagger for API documentation.',
+      live_link: 'https://hanjelscars.netlify.app/',
+      source_url: 'https://github.com/Hamzaoutdoors/rentalcars_backend',
+    },
+    {
+      name: 'My Budget App',
+      heading: 'Capstone/Solo-project',
+      stack: 'Back-end',
+      year: '2022',
+      imgUrl: './Images/projects/Project_12.png',
+      techs: ['ruby', 'rails', 'postgreSQL'],
+      description:
+        'Budget App is a Mobile Web application that lets you create a user, log in, so that the data is private to them. In this application you will be introduced to your new transactions associated with a category and see the money spent on each category.',
+      live_link: 'https://shrouded-sea-17784.herokuapp.com/',
+      source_url: 'https://github.com/Laylo309/Recipe-app',
+    },
+    {
+      name: 'Recipe App',
+      heading: 'Group-project',
       stack: 'Back-end',
       year: '2021',
-      imgUrl: './Images/projects/Project_9.png',
-      techs: ['ruby', 'rspec', 'OOP'],
+      imgUrl: './Images/projects/Project_11.png',
+      techs: ['ruby', 'rails', 'javascript'],
       description:
-        'Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. Unit testing runs with Rspec.',
+        'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
       live_link: '#',
-      source_url:
-        'https://github.com/Laylo309/OOP-school-library',
+      source_url: 'https://github.com/Laylo309/Recipe-app',
+    },
+    {
+      name: 'My Blog App',
+      heading: 'Group-project',
+      stack: 'Back-end',
+      year: '2021',
+      imgUrl: './Images/projects/Project_10.png',
+      techs: ['ruby', 'rails', 'javascript'],
+      description:
+        'This is my Blogs app where, you can find a warm environment for you to share cheap wisdom, enchanting crowds, and more. Users here are so competent that they can distribute wisdom without being consulted, they can make posts, receive commentaries on those posts, and receive likes.',
+      live_link: '#',
+      source_url: 'https://github.com/Laylo309/My-blog-app',
     },
     {
       name: 'OOP-school-library',
@@ -81,8 +116,7 @@ const data = {
       description:
         'Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. Unit testing runs with Rspec.',
       live_link: '#',
-      source_url:
-        'https://github.com/Laylo309/OOP-school-library',
+      source_url: 'https://github.com/Laylo309/OOP-school-library',
     },
     {
       name: 'Covid-19 data traker',
@@ -95,7 +129,7 @@ const data = {
         'SPA Mobile web app which is created using React and Redux. This webapp helps to get new information about Covid-19. Snapshot test integrated using Jest library.',
       live_link: 'https://covid19-tracker-laylo309.netlify.app/#/home',
       source_url:
-        'https://github.com/aristides1000/space-travelers-hub-react-redux',
+        'https://github.com/Laylo309/react_capstone',
     },
     {
       name: 'Space Travelers’Hub',
@@ -119,7 +153,7 @@ const data = {
       techs: ['css', 'javascript', 'react'],
       description:
         'My first Single Page React App. Simple calculator which is created using ReactJs. It performs mathematical operations like addition, subtraction, multiplication, and division. Snapshot test integrated using Jest library.',
-      live_link: 'https://app.netlify.com/sites/math-magicians-laylo309',
+      live_link: 'https://math-magicians-laylo309.netlify.app/',
       source_url: 'https://github.com/Laylo309/Math_magicians',
     },
     {
@@ -143,8 +177,8 @@ const data = {
       techs: ['html', 'css', 'javascript'],
       description:
         '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
-      live_link: '',
-      source_url: '',
+      live_link: 'https://to-do-list-laylo309.netlify.app/',
+      source_url: 'https://github.com/Laylo309/to-do-list',
     },
     {
       name: 'Tourism website',
