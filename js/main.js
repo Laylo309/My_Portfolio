@@ -80,7 +80,7 @@ const data = {
       description:
         'Budget App is a Mobile Web application that lets you create a user, log in, so that the data is private to them. In this application you will be introduced to your new transactions associated with a category and see the money spent on each category.',
       live_link: 'https://shrouded-sea-17784.herokuapp.com/',
-      source_url: 'https://github.com/Laylo309/Recipe-app',
+      source_url: 'https://github.com/Laylo309/my-budget-app',
     },
     {
       name: 'Recipe App',
