@@ -59,7 +59,7 @@ const projectDiv = document.createElement('div');
 const data = {
   projects: [
     {
-      name: 'Cars Rental App',
+      name: 'Car Rentals App',
       heading: 'Capstone/Group-project',
       stack: 'Full-stack',
       year: '2022',
