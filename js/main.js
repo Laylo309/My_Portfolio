@@ -119,7 +119,7 @@ const data = {
       source_url: 'https://github.com/Laylo309/OOP-school-library',
     },
     {
-      name: 'Covid-19 data traker',
+      name: 'Covid-19 data tracker',
       heading: 'Capstone/Solo-project',
       stack: 'Front-end',
       year: '2021',
