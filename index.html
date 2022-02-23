@@ -1,184 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-202675380-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
+      gtag('config', 'UA-202675380-1');
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <title>Laylo's Portfolio</title>
+  </head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202675380-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-202675380-1');
-  </script>
-
-  <link rel="stylesheet" href="styles.css">
-  <title>Laylo's Portfolio</title>
-</head>
-
-<body>
-  <header>
-    <a href="http://github.com">
-      <h1 class="logo">My Logo</h1>
-    </a>
-    <nav class="menu">
-      <img src="./Images/menu.svg" alt="button image for navigation in mobile version">
-    </nav>
-    <ul class="nav-ul">
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </header>
-  <section class="main-page">
-    <h2 class="text">
-      I'm Laylo <br> Glad to see you!
-    </h2>
-    <p class="text1">
-      I’m a software developer! I can help you build a product , feature or website Look through some of
-      my
-      work and experience! If you like what you see and have a project you need coded, don’t hestiate to
-      contact me.
-    </p>
-    <section class="social-media">
-      <h6 class="social-media-text">LET’S CONNECT</h6>
-      <ul class="social-media-icons">
-        <li>
-          <a href="https://twitter.com/home?lang=en">
-            <img class="icons" src="./Images/social_media/Vector.png" alt="laylo's twitter">
-          </a>
-        </li>
-        <li>
-          <a href="http://www.mediamarkt.com/">
-            <img class="icons" src="./Images/social_media/Vector2.png" alt="laylo's mediamarkt">
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/">
-            <img class="icons" src="./Images/social_media/Vector3.png" alt="laylo's github">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.google.com/">
-            <img class="icons" src="./Images/social_media/Vector4.png" alt="laylo's google">
-          </a>
-        </li>
-
+  <body>
+    <header>
+      <a href="https://github.com/Laylo309">
+        <h1 class="logo">LayloKH</h1>
+      </a>
+      <nav class="menu">
+        <img
+          src="./Images/menu.svg"
+          alt="button image for navigation in mobile version"
+        />
+      </nav>
+      <ul class="nav-ul">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </section>
-  </section>
-  <section class="works-section">
-    <ul class="works myWorksSection popup" id="section-1"></ul>
-  </section>
-  <section class="about">
-    <div class="about-menu" id="section-2">
-      <!-- <div class="about-text"> -->
-      <h2 class="about-title">About<br>Myself</h2>
-      <p class="about-info">I’m a software developer! I can help you build a product , feature or
-        website Look through
-        some of my work and experience! If you like what you see and have a project you need coded,
-        don’t hestiate to contact me.</p>
+    </header>
+    <section class="main-page">
+      <h2 class="text">
+        I'm Laylo <br />
+        Glad to see you!
+      </h2>
+      <p class="text1">
+        I’m a Full-Stack Software developer! I can help you build a product , feature or
+        website Look through some of my work and experience!<br> If you like what
+        you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
       <section class="social-media">
-        <h6 class="social-media-text1">LET’S CONNECT</h6>
-        <ul class="social-media-icons1">
-
-          <li class="social-media-icn1">
-            <a href="https://twitter.com/home?lang=en">
-              <img class="icons" src="./Images/social_media/Vector.png" alt="laylo's twitter">
+        <h6 class="social-media-text">LET’S CONNECT</h6>
+        <ul class="social-media-icons">
+          <li>
+            <a href="https://twitter.com/laylo_khodjaeva">
+              <img
+                class="icons"
+                src="./Images/social_media/twitter.png"
+                alt="laylo's twitter"
+              />
             </a>
           </li>
-          <li class="social-media-icn2">
-            <a href="http://www.mediamarkt.com/">
-              <img class="icons" src="./Images/social_media/Vector2.png" alt="laylo's mediamarkt">
+          <li>
+            <a href="https://www.linkedin.com/in/laylo-khodjaeva/">
+              <img
+                class="icons"
+                src="./Images/social_media/linkedin.png"
+                alt="laylo's linkedin"
+              />
             </a>
           </li>
-          <li class="social-media-icn3">
-            <a href="https://github.com/">
-              <img class="icons" src="./Images/social_media/Vector3.png" alt="laylo's github">
+          <li>
+            <a href="https://github.com/Laylo309">
+              <img
+                class="icons"
+                src="./Images/social_media/github.png"
+                alt="laylo's github"
+              />
             </a>
           </li>
-          <li class="social-media-icn4">
-            <a href="https://www.google.com/">
-              <img class="icons" src="./Images/social_media/Vector4.png" alt="laylo's google">
+          <li>
+            <a href="https://angel.co/u/laylo-khodjaeva">
+              <img
+                class="icons"
+                src="./Images/social_media/angelist.png"
+                alt="laylo's angelist"
+              />
             </a>
           </li>
         </ul>
       </section>
+    </section>
+    <section class="works-section" id="portfolio">
+      <ul class="works myWorksSection popup"></ul>
+    </section>
+    <section class="about" id="about">
+      <div class="about-menu">
+        <h2 class="about-title">About<br />Myself</h2>
+        <p class="about-info">
+          I’m a Full-Stack Software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+        <section class="social-media">
+          <h6 class="social-media-text1">LET’S CONNECT</h6>
+          <ul class="social-media-icons1">
+            <li>
+              <a href="https://twitter.com/laylo_khodjaeva">
+                <img
+                  class="icons"
+                  src="./Images/social_media/twitter.png"
+                  alt="laylo's twitter"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/laylo-khodjaeva/">
+                <img
+                  class="icons"
+                  src="./Images/social_media/linkedin.png"
+                  alt="laylo's linkedin"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Laylo309">
+                <img
+                  class="icons"
+                  src="./Images/social_media/github.png"
+                  alt="laylo's github"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://angel.co/u/laylo-khodjaeva">
+                <img
+                  class="icons"
+                  src="./Images/social_media/angelist.png"
+                  alt="laylo's angelist"
+                />
+              </a>
+            </li>
+          </ul>
+        </section>
 
-      <button class="btn_1" type="button">Get my resume</button>
-      <!-- </div> -->
+        <button class="btn" type="button" onclick="window.location.href='https://docs.google.com/document/d/1ktJ_M2Z4vrjSbcORffoz0AUL-FBsDIyDdUVwEJnGABA/edit?usp=sharing';">Get my resume</button>
+      </div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button acc-btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Languages
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+              <ul class="list">
+                <li class="lang-list">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="icon of Javascript"
+                  />
+                  <p class="lang">Javascript</p>
+                </li>
+                <li class="lang-list">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg"
+                    alt="icon of Ruby"
+                  />
 
-    </div>
-    <ul class="tech-icons">
-      <li class="techs">
-        <ul>
-          <li class="languages">
-            <p class="language">Languages</p>
-            <img src="./Images/keyboard_arrow_down_black_24dp.svg" alt="languages detail" class="arrow">
-          </li>
-        </ul>
+                  <p class="lang">Ruby</p>
+                </li>
+                <li class="lang-list">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                    alt="icon of HTML"
+                  />
 
-        <ul class="list">
-          <li class="lang-list"><img src="./Images/pages/JS.png" alt="langugage icon JS">
-            <p class="lang">Javascript</p>
-          </li>
-          <li class="lang-list"><img src="./Images/pages/HTML.png" alt="langugage icon HTML">
-            <p class="lang">HTML</p>
-          </li>
-          <li class="lang-list"><img src="./Images/pages/CSS.png" alt="langugage icon CSS">
-            <p class="lang">CSS</p>
-          </li>
-        </ul>
-      </li>
-      <li class="tech-titles">
-        <p>Frameworks</p>
-        <img src="./Images/keyboard_arrow_right_black_24dp.svg" class="arrow-closed" alt="frameworks detail">
-      </li>
+                  <p class="lang">HTML</p>
+                </li>
+                <li class="lang-list">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                    alt="icon of CSS"
+                  />
 
-      <li class="tech-titles">
-        <p>Skills</p>
-        <img src="./Images/keyboard_arrow_right_black_24dp.svg" class="arrow-closed" alt="skills detail">
-      </li>
+                  <p class="lang">CSS</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button collapsed acc-btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Frameworks and Libraries
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body">
+              <ul class="list">
+                <li class="lang-list">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                    alt="icon of React"
+                  />
 
+                  <p class="lang">React</p>
+                </li>
+                <li class="lang-list">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                    alt="icon of NodeJs"
+                  />
 
-    </ul>
-  </section>
-  <section class="last-page">
-    <div class="contact-me" id="section-3">
-      <h2 class="contact-title">Contact me</h2>
-      <p class="contact-info">If you have an application you are interested in developing, a feature that
-        you need built or a project that needs coding. I’d love to help with it </p>
-      <form class="form" id="form" action="https://formspree.io/f/mnqlvbjg" method="POST">
-        <ul>
-          <li class="name">
-            <label for="name"></label>
-            <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="30" required>
-            <small class="validation"></small>
-          </li>
-          <li class="email">
-            <label for="email"></label>
-            <input type="email" id="email" name="user_email" placeholder="Email address" required>
-            <small class="validation"></small>
-          </li>
+                  <p class="lang">NodeJs</p>
+                </li>
 
-          <li class="textarea">
-            <label for="msg"></label>
-            <textarea id="msg" name="user_message" placeholder="Write your message here" maxlength="500"
-              required></textarea>
+                <li class="lang-list">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg"
+                    alt="icon of Rails"
+                  />
+                  <p class="lang">Rails</p>
+                </li> 
+                <li class="lang-list">
+                  <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" 
+                    alt="icon of Redux"
+                  />
+                  <p class="lang">Redux</p>
+                </li>
+                <li class="lang-list">
+                  <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+                    alt="icon of Jest"
+                  />
+                  <p class="lang">Jest</p>
+                </li> 
+                <li class="lang-list">
+                  <img
+                  src="/Images/rspec-icon.png"
+                    alt="icon of Rspec"
+                  />
+                  <p class="lang">Rspec</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              class="accordion-button collapsed acc-btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              Skills
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body">
+              <strong>Tools & Methods:</strong> Git, GitHub, Heroku, Netlify, Mobile/Responsive Development, Chrome Dev Tools
+              <hr>
+              <strong>Professional:</strong> Remote Pair-Programming, Teamwork, Mentoring, Leadership
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="last-page">
+      <div class="contact-me" id="contact">
+        <h2 class="contact-title">Contact me</h2>
+        <p class="contact-info">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form
+          class="form"
+          id="form"
+          action="https://getform.io/f/cdaf5707-42ba-40c2-9adc-0f7b616832f0"
+          method="POST"
+        >
+          <ul>
+            <li class="name">
+              <label for="name"></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full name"
+                maxlength="30"
+                required
+              />
               <small class="validation"></small>
-          </li>
+            </li>
+            <li class="email">
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+              <small class="validation"></small>
+            </li>
 
-        </ul>
-        <button class="button" type="submit">Get in touch</button>
-      </form>
-    </div>
-  </section>
+            <li class="textarea">
+              <label for="msg"></label>
+              <textarea
+                id="msg"
+                name="message"
+                placeholder="Write your message here"
+                maxlength="500"
+                required
+              ></textarea>
+              <small class="validation"></small>
+            </li>
+          </ul>
+          <button class="button" type="submit">Get in touch</button>
+        </form>
+      </div>
+    </section>
 
-  <script src="./js/main.js"></script>
-</body>
-
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
